@@ -1,6 +1,7 @@
-# a500-simple-spi
+# a500-simple-spi-hardware
 Simple SPI controller for the Amiga 500 with support for SD-cards and Ethernet controller.
 This repository contains the hardware CAD files.
+For drivers look here [drivers](https://github.com/Mathesar/a500-simple-spi-drivers).
 
 
 It seems I often need 3 revisions to get things right.
