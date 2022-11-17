@@ -1,7 +1,6 @@
 # a500-simple-spi-hardware
-Simple SPI controller for the Amiga 500 with support for SD-cards and Ethernet controller.
-This repository contains the hardware CAD files.
-For drivers look [here](https://github.com/Mathesar/a500-simple-spi-drivers).
+Simple SPI controller for the Amiga 500 with support for SD-cards and Ethernet controller. Tested on a rev. 5 Amiga 500. It might also work on other revisions and Amiga models but that has not been tested. The design is licensed under CERN OHL-S V2.0
+This repository contains the hardware CAD files. For drivers look [here](https://github.com/Mathesar/a500-simple-spi-drivers).
 This SPI controller is designed to be as simple as possible so that anyone can build it, hence the "simple" SPI controller.
 The design uses no programmable logic chips but only jellybean 3.3V 74LVCXX logic chips and a jellybean quad analog switch.
 To make it so simple compromised had to be made. The design therefore does not contain any shifting logic. This is a "bitbanging" design that can only receive or send 1 bit at a time. All the shifting is thus done by the driver software. It is not at bad as it seems though as the driver does not need to generate the SCLK signal.
