@@ -20,6 +20,8 @@ However, even 1.1 had some minor issues. Firstly I made a small mistake in the a
 ## Revision 1.2
 Therefore, revision 1.2 was created that fixes those final issues. I did not built it but it is basically revision 1.1 wwith a slightly resized PCB and the address decoder bug fixed. It needs no patches whatsoever and the metal shield should not interfere.
 
+![revision 1.2](/pictures/A500_Simple_SPI_V1.2.jpg)
+
 ## Building hints:
 This SPI controller is intended to give an Amiga 500 an SD-card (to be used as a harddisk) and ethernet connectivity. 
 The ethernet module is optional and connected via a pinheader and some dupont jumper cables. The SD-card module is definately not optional and soldered directly to the interface as can be seen on the pictures. The reason for this is that the SD-card module supplies 3.3V to the logic chips (and to the optional ethernet controller) via it's onboard voltage regulator.
