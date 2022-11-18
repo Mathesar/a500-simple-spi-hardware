@@ -34,6 +34,11 @@ The pinheader for the SD-card actvity LED and the ethernet module should be righ
 The pinheader that connects the controller to the 68000 socket on the A500 main board should be "turned" types with round pins. The thin part plugs into the Amiga, the thicker part is soldered on the SPI controller. This is very important as the wrong pins might damage your 68000 socket.
 The ethernet module does not really fit internally to the Amiga 500. I have used some long dupont cables that go through to the side expansion slot and the ethernet module is thus hanging outside. Maybe I build something like [this](https://www.thingiverse.com/thing:4830638) someday.
 
+## HDD led
+I hotglued a LED to the normal floppy LED and connected that to the LED pins on the simple SPI controller. A bit like done [here](https://www.youtube.com/watch?v=9V46ZEBu338) except that I used a single orange LED. Hotglue is easily removed with some IPA (isopropyl alcohol) if I ever change my mind. It looks really good:
+
+![HDD led](/pictures/hdd_led.jpg)
+
 ## Compatiblity with other hardware
 The simple SPI hardware uses a fixed address space in the upper region of the ZORRO-II IO space. Additional hardware like the A590 side-car should end up in the lower region of the ZORRO-II IO space so in theory they should not interfere. This is untested though.
 
