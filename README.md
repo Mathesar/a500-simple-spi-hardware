@@ -30,7 +30,7 @@ Pictures of the modules I used are in the schematic and in this repository. It i
 ![SD-card module](/pictures/sd_module.png) ![Ethernet module](/pictures/ethernet_module.png)
 
 The circuit depends on the pinout and the onboard voltage regulator. The circuit also contain an old-fashioned electrolytic capacitor on the +3.3V rail. This component is also mandatory! Without it the voltage regulator on the SD-card module might become unstable.
-The pinheader for the SD-card actvity LED and the ethernet module should be right angle types or straight angle types bend over. Otherwise the whole setup becomes too high when the dupont cables are mounted. With straight angle pins everything fits nicely under the metal shield.
+The pinheader for the SD-card actvity LED and the ethernet module should be right angle types or straight angle types bend over. Otherwise the whole setup becomes too high when the dupont cables are mounted. With right angle pins everything fits nicely under the metal shield.
 The pinheader that connects the controller to the 68000 socket on the A500 main board should be "turned" types with round pins. The thin part plugs into the Amiga, the thicker part is soldered on the SPI controller. This is very important as the wrong pins might damage your 68000 socket.
 The ethernet module does not really fit internally to the Amiga 500. I have used some long dupont cables that go through to the side expansion slot and the ethernet module is thus hanging outside. Maybe I build something like [this](https://www.thingiverse.com/thing:4830638) someday.
 
