@@ -23,7 +23,11 @@ Therefore, revision 1.2 was created that fixes those final issues. I did not bui
 ## Building hints:
 This SPI controller is intended to give an Amiga 500 an SD-card (to be used as a harddisk) and ethernet connectivity. 
 The ethernet module is optional and connected via a pinheader and some dupont jumper cables. The SD-card module is definately not optional and soldered directly to the interface as can be seen on the pictures. The reason for this is that the SD-card module supplies 3.3V to the logic chips (and to the optional ethernet controller) via it's onboard voltage regulator.
-Pictures of the modules I used are in the schematic. It is very important to use exactly the SD-card module as I used. The circuit depends on the pinout and the onboard voltage regulator. The circuit also contain an old-fashioned electrolytic capacitor on the +3.3V rail. This component is also mandatory! Without it the voltage regulator on the SD-card module might become unstable.
+Pictures of the modules I used are in the schematic and in this repository. It is very important to use exactly the SD-card module as I used. 
+
+![SD-card module](/pictures/sd_module.png)
+
+The circuit depends on the pinout and the onboard voltage regulator. The circuit also contain an old-fashioned electrolytic capacitor on the +3.3V rail. This component is also mandatory! Without it the voltage regulator on the SD-card module might become unstable.
 The pinheader for the SD-card actvity LED and the ethernet module should be right angle types or straight angle types bend over. Otherwise the whole setup becomes too high when the dupont cables are mounted. With straight angle pins everything fits nicely under the metal shield.
 The pinheader that connects the controller to the 68000 socket on the A500 main board should be "turned" types with round pins. The thin part plugs into the Amiga, the thicker part is soldered on the SPI controller. This is very important as the wrong pins might damage your 68000 socket.
 
