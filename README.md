@@ -10,7 +10,7 @@ It seems I often need 3 revisions to get things right :-). Therefore, this repos
 
 ## Revision 1.0
 Revision 1.0 was my first attempt. It used a 74HCT688 as the address decoder and did not set MOSI high on reads.
-Therefore this version had problems with SD-cards. I fixed it by using A0 instead of D7 to write but this made writes very slow.
+Therefore this version had problems with SD-cards. I fixed it by using A7 instead of D7 to write but this made writes very slow.
 Also, the '688 is currently unobtainium. It seems that only simple logic chips like the '00 or '02 are available in all logic families.
 
 ## Revision 1.1
