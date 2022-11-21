@@ -1,0 +1,15 @@
+"Designator"			"Quantity"		"Description"
+"J4"				1			2pins 2.54mm male pin header for SD activity LED	
+"C5"				1			100uF/16V 2mm pitch electrolytic, NO low ESR type!!!
+"J3"				1			SD-card module, see pictures
+"U1"				1			64pin DIL socket for 68000 processor
+"J2"				1			6pins 2.54mm male pin header for optional ENC28J60 module
+"R3,R6,R5,R4,R2"		5			100E 0805 resistor
+"U2"				1			DG412 SOIC
+"C2,C9,C1,C7,C3,C6,C8";		7			100n 0805 X7R/X5R capacitor
+"R1"				1			4K7 0805 resistor
+"U6"				1			74LVC74	SOIC
+"U7"				1			74LVC02	SOIC
+"U3"				1			74LVC00	SOIC
+"U5"				1			74LVC32	SOIC
+"J1"				1			64pin or 2*32pin ROUND pinheader for connecting to A500 main board
