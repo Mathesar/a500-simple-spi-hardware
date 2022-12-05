@@ -11,6 +11,7 @@
     (company "Dennis van Weeren")
     (comment 1 "rev 1.1: new address decoder, 3V3 supplied by SD module, MOSI forced high on read")
     (comment 2 "rev 1.2: fixed small but fatal bug in address decoder, smaller PCB to clear shield")
+    (comment 3 "NOTE 5-12-2022: mod required on U7, see schematics")
   )
 
   (lib_symbols
@@ -9729,13 +9730,18 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bb3f7286-3177-45e2-9561-dbc831f86025)
   )
-  (text "MOSI is forced high\nduring a read cycle" (at 168.91 36.83 0)
+  (text "MOSI is forced high\nduring a read cycle" (at 148.59 39.37 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d144a8f1-db46-4edb-93d1-f82b9052d324)
   )
   (text "ANODE" (at 260.35 128.27 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d6bfcdee-7004-4414-a94f-708cd9e08e37)
+  )
+  (text "** REQUIRED MOD **\nlift pin 2 of U7 and \nconnect to pin 3 of U7\nThis improves MOSI \nsetup times on reads"
+    (at 173.99 22.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid dbd8847d-aa2a-4b5a-8436-6fd936c23e21)
   )
 
   (label "D8" (at 140.97 95.25 0)
@@ -10026,8 +10032,8 @@
   (symbol (lib_id "74xx:74HC02") (at 181.61 27.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006291b3e1)
-    (property "Reference" "U7" (id 0) (at 181.61 19.685 0))
-    (property "Value" "74LVC02" (id 1) (at 181.61 21.9964 0))
+    (property "Reference" "U7" (id 0) (at 181.61 35.56 0))
+    (property "Value" "74LVC02" (id 1) (at 181.61 33.02 0))
     (property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (id 2) (at 181.61 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )

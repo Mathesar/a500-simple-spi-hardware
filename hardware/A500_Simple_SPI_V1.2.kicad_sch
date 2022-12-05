@@ -11,6 +11,7 @@
     (company "Dennis van Weeren")
     (comment 1 "rev 1.1: new address decoder, 3V3 supplied by SD module, MOSI forced high on read")
     (comment 2 "rev 1.2: fixed small but fatal bug in address decoder, smaller PCB to clear shield")
+    (comment 3 "NOTE 5-12-2022: mod required on U7, see schematics")
   )
 
   (lib_symbols
