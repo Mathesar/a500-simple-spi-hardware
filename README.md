@@ -18,7 +18,10 @@ So, revision 1.1 was created that solved all above issues. This is the version y
 However, even 1.1 had some minor issues. Firstly I made a small mistake in the address decoder. That one was very easy to patch though and after the patch everything functions as designed. Secondly however, the PCB was slightly too large at the top left corner causing the metal shield to no longer fit. (tested on a revision 5 Amiga 500)
 
 ## Revision 1.2
-Therefore, revision 1.2 was created that fixes those final issues. I did not built it but it is basically revision 1.1 wwith a slightly resized PCB and the address decoder bug fixed. It needs no patches whatsoever and the metal shield should not interfere.
+Therefore, revision 1.2 was created that fixes those final issues. I did not built it but it is basically revision 1.1 wwith a slightly resized PCB and the address decoder bug fixed. 
+
+**UPDATE 5-12-2022:**
+The setup time on MOSI is marginal during reads. This is because of the ~DECODE signal feeding into U7A. To fix this, pin 2 of U7 should be lifted from the PCB so that it longer makes contact with the pad. This pin should then be connected to pin 3 of U7. On my system the hardware actually worked without the modification but some SD cards can get unreliable if this mod is not done
 
 ![revision 1.2](/pictures/A500_Simple_SPI_V1.2.jpg)
 
