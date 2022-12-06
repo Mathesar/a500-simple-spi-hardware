@@ -26,6 +26,8 @@ The setup time on MOSI is marginal during reads. This is because of the ~DECODE 
 ## Revision 1.3
 This is the latest revision incorporating the MOSI setup fix.. 
 
+![Render of rev 1.3](/pictures/A500_Simple_SPI_V1.3.png)
+
 ## Building hints:
 This SPI controller is intended to give an Amiga 500 an SD-card (to be used as a harddisk) and ethernet connectivity. 
 The ethernet module is optional and connected via a pinheader and some dupont jumper cables. The SD-card module is definately not optional and soldered directly to the interface as can be seen on the pictures. The reason for this is that the SD-card module supplies 3.3V to the logic chips (and to the optional ethernet controller) via it's onboard voltage regulator.
