@@ -6,7 +6,7 @@ The design uses no programmable logic chips but only jellybean 3.3V 74LVCXX logi
 To make it so simple compromises had to be made. The design therefore does not contain any shifting logic. This is a "bitbanging" design that can only receive or send 1 bit at a time. All the shifting is thus done by the driver software. It is not at bad as it seems though as the driver does not need to generate the SCLK signal.
 The SCLK signal is generated automatically by the hardware whenever a bit is read or written. Therefore, using some optimised assembly, this controller can do about 60Kbytes/sec of raw throughput on a plain Amiga 500 with no FAST ram.
 
-It seems I often need 3 revisions to get things right :-). Therefore, this repository contains rev 1.2 of the hardware.
+It seems I often need ~~3~~ 4 revisions to get things right :-). Therefore, this repository contains rev 1.2 of the hardware.
 
 ## Revision 1.0
 Revision 1.0 was my first attempt. It used a 74HCT688 as the address decoder and did not set MOSI high on reads.
@@ -23,7 +23,8 @@ Therefore, revision 1.2 was created that fixes those final issues. I did not bui
 **UPDATE 5-12-2022:**
 The setup time on MOSI is marginal during reads. This is because of the ~DECODE signal feeding into U7A. To fix this, pin 2 of U7 should be lifted from the PCB so that it longer makes contact with the pad. This pin should then be connected to pin 3 of U7. On my system the hardware actually worked without the modification but some SD cards can get unreliable if this mod is not done
 
-![revision 1.2](/pictures/A500_Simple_SPI_V1.2.jpg)
+## Revision 1.3
+This is the latest revision incorporating the MOSI setup fix.. 
 
 ## Building hints:
 This SPI controller is intended to give an Amiga 500 an SD-card (to be used as a harddisk) and ethernet connectivity. 
