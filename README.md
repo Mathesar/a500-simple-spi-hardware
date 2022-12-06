@@ -6,7 +6,7 @@ The design uses no programmable logic chips but only jellybean 3.3V 74LVCXX logi
 To make it so simple compromises had to be made. The design therefore does not contain any shifting logic. This is a "bitbanging" design that can only receive or send 1 bit at a time. All the shifting is thus done by the driver software. It is not at bad as it seems though as the driver does not need to generate the SCLK signal.
 The SCLK signal is generated automatically by the hardware whenever a bit is read or written. Therefore, using some optimised assembly, this controller can do about 60Kbytes/sec of raw throughput on a plain Amiga 500 with no FAST ram.
 
-It seems I often need ~~3~~ 4 revisions to get things right :-). Therefore, this repository contains rev 1.2 of the hardware.
+It seems I often need ~~3~~ 4 revisions to get things right :-). 
 
 ## Revision 1.0
 Revision 1.0 was my first attempt. It used a 74HCT688 as the address decoder and did not set MOSI high on reads.
