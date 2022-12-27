@@ -24,9 +24,7 @@ Therefore, revision 1.2 was created that fixes those final issues. I did not bui
 The setup time on MOSI is marginal during reads. This is because of the ~DECODE signal feeding into U7A. To fix this, pin 2 of U7 should be lifted from the PCB so that it longer makes contact with the pad. This pin should then be connected to pin 3 of U7. On my system the hardware actually worked without the modification but some SD cards can get unreliable if this mod is not done
 
 ## Revision 1.3
-This is the latest revision incorporating the MOSI setup fix.. 
-
-![Render of rev 1.3](/pictures/A500_Simple_SPI_V1.3.png)
+This is the latest revision incorporating the MOSI setup fix. This version has been built and verified.
 
 ## Building hints:
 This SPI controller is intended to give an Amiga 500 an SD-card (to be used as a harddisk) and ethernet connectivity. 
